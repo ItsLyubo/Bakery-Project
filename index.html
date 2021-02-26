@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Cupcake Company</title>
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="logo.png" alt="logo" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just a bakery,<br>It's a <span>Cupcake Factory.</span></h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi voluptatem voluptas magnam sit, nulla atque distinctio perspiciatis impedit eius beatae aperiam unde sunt laudantium laborum fugit hic fuga quos dolorum rem quo, consectetur quidem minus doloremque? Molestiae, iste quae possimus rerum ducimus exercitationem natus voluptas esse culpa. Veritatis, officiis minus.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="Cupcake2.png" alt="" class="display-img">
+            </div>
+        </div>
+        <ul class="gallery">
+            <li><img src="Cupcake2.png" alt="" class="gallery-item" onclick="imgSlider('Cupcake2.png');changeCircleColor('linear-gradient(to top left, #e96986 0%, #b4fbfb 100%)')"></li>
+            <li><img src="Cupcake1.png" alt="" class="gallery-item" onclick="imgSlider('Cupcake1.png');changeCircleColor('linear-gradient(to top left, #b4fbfb 0%, #e96986 100%)')"></li>
+            <li><img src="Cupcake3.png" alt="" class="gallery-item" onclick="imgSlider('Cupcake3.png');changeCircleColor('linear-gradient(to bottom right, #b4fbfb 0%, #fa6914 100%)')"></li>
+            <li><img src="Cupcake4.png" alt="" class="gallery-item" onclick="imgSlider('Cupcake4.png');changeCircleColor('linear-gradient(to bottom right, #b4fbfb 0%, #eab117 80%)')"></li>
+
+        </ul>
+
+        <ul class="sci">
+            <li><img src="instagram.svg" alt=""></li>
+            <li><img src="twitter.svg" alt=""></li>
+            <li><img src="youtube.svg" alt=""></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+    function imgSlider(pics) {
+    document.querySelector('.display-img').src = pics;
+}
+
+    function changeCircleColor(color) {
+        const circle = document.querySelector('.circle');
+        circle.style.background = color;
+    }
+    </script>
+</body>
+</html>
